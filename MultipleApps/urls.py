@@ -19,9 +19,9 @@ from apps.users import views as users_views
 
 urlpatterns = [
     url(r'^', include('apps.blogs.urls')),
-    url(r'^blogs', include('apps.blogs.urls')),
-    url(r'^surveys', include('apps.surveys.urls')),
-    url(r'^users', include('apps.users.urls')),
+    url(r'^blogs/', include('apps.blogs.urls')),
+    url(r'^surveys/', include('apps.surveys.urls')),
+    url(r'^users/', include('apps.users.urls')),
     url(r'^register', users_views.register),
     url(r'^login', users_views.login)
 ]
